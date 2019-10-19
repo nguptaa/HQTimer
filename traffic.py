@@ -158,6 +158,8 @@ if __name__ == '__main__':
     from json import loads
     with open('sample.json', 'r') as f:
         data = loads(f.readline())
-        print("\nPacket num = ",data['pktnum'])
-        print("\nFlow num = ", data['flownum'])
-        print("\nFlow size = ", data['flowsize'])
+        print("\nPacket num :- ",data['pktnum'])
+        print("\nFlow num :- ", data['flownum'])
+        print("\nFlow size:-")
+        for fs in data['flowsize'].items():
+            print(fs)
