@@ -92,7 +92,6 @@ class Packet:
         print('{}({})'.format(self.tp, self.size), file=filename)
         return 0
 
-
 class Traffic:
     def __init__(self, pcap_file=None):
         self.pkts = []
